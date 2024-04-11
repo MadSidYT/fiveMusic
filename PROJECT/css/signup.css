@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&family=Pacifico&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: rgb(248, 247, 247);
+    font-family: 'Open Sans', sans-serif;
+}
+
+.main {
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form {
+    width: 450px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1.5rem;
+    row-gap: 20px;
+    border: .5px solid rgb(248, 247, 247);
+    border-radius: 8px;
+    background: transparent;
+    backdrop-filter: blur(6px);
+}
+
+.heading{
+    font-family: 'Pacifico', cursive;
+}
+
+.input-group {
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.input-group input {
+    color:white;
+    height: 2rem;
+    padding: 5px;
+    background: transparent;
+    outline: none;
+    border: none;
+    border-bottom:1px solid white;
+}
+
+.terms {
+    width: 80%;
+    display: flex;
+    align-items: baseline;
+    column-gap: 0.5rem;
+}
+.terms a{
+    color: #c0d6fd;
+}
+
+input[type="button"]{
+    width: 70%;
+    outline: none;
+    border: none;
+    color: white;
+    background-color: #192A47;
+    border-radius: 100vmax;
+    height: 40px;
+}
+input[type="button"]:active{
+background-color: #293A4B;
+}
+
+@media screen and (max-width:620px) {
+    .form{
+        width: 100vw;
+        height: 100vh;
+        border: none;
+    }
+}
